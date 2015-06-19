@@ -19,7 +19,14 @@ class Employee(Person):
 class Manager(Employee):
     def __init__(self, name, employee_num, designation, hourly_pay, address=None, phone_num=None):
         super(Manager, self).__init__(name, employee_num, designation, hourly_pay, address, phone_num)
-    def funs(self):
+
+    def check_stock(self):
+        pass
+
+    def order_stock(self):
+        pass
+
+    def calculate_profit(self):
         pass
 
 
