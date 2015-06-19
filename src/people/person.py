@@ -26,6 +26,7 @@ class Manager(Employee):
 class Cashier(Employee):
     def __init__(self, name, employee_num, designation, hourly_pay, address=None, phone_num=None):
         super(Cashier, self).__init__(name, employee_num, designation, hourly_pay, address, phone_num)
+
     def funs(self):
         pass
 
