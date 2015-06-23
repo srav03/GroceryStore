@@ -2,6 +2,7 @@ __author__ = 'snalam200'
 from GroceryStore.src.infrastructure.building import Building
 from decimal import Decimal
 
+
 class GroceryStore(Building):
     def __init__(self):
         self.aisles = {

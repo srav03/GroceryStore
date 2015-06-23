@@ -14,15 +14,15 @@ class Cashier(Employee):
         return items_purchased.split(',')
 
     @staticmethod
-    def get_prices(purchase_list, price_stock_dict):
+    def get_prices(purchase_list, price_dict):
         for item in purchase_list:
             total_price = 0
-            item_price = price_stock_dict[item][0]
+            item_price = price_dict[item]
             total_price += item_price
             return total_price
 
     @staticmethod
-    def update_stock(purchase_list, price_stock_dict):
+    def update_stock(purchase_list, stockroom_dict):
         for item in purchase_list:
-            price_stock_dict[item][1] -= 1
-        return price_stock_dict
+            stockroom_dict[item] -= 1
+        return stockroom_dict
